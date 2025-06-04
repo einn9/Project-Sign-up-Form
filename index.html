@@ -3,10 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sign-up-Form</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>test</h1>
+    <div class="backImg">
+        <div class="odinLogo">
+            <div class="odinImg"></div>
+            <div class="odinText">ODIN</div>
+        </div>
+        <div class="footer">Photo by <a href="https://unsplash.com/@adinc">Altinay Dinç</a> on <a href="https://unsplash.com/">Unplash</a></div>
+    </div>
+    <div class="container">
+        <div class="formIntro">
+            <p><em>Thank you</em> for showing interest in your website!</p>
+            <p>Please fill in the information below to get access to weekly news.</p>
+        </div>
+        <form action="https:/www.data-sendsite.com" method="get">
+            <h1 class="formStart">Let's get started!</h1>
+            <div class="formControls">
+                <div class="firstName">
+                    <label for="firstName">First name:</label>
+                    <input type="text" id="firstName" name="firstName">
+                </div>
+                <div class="lastName">
+                    <label for="lastName">Last name:</label>
+                    <input type="text" id="lastName" name="lastName">
+                </div>
+                <div class="email">
+                    <label for="userMail">Email:</label>
+                    <input type="email" id="userMail" name="email" placeholder="gabriel213b@gmail.com">
+                </div>
+                <div class="phone">
+                    <label for="phoneNumber">Phone number:</label>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="19351052">
+                </div>
+                <div class="pw">
+                    <label for="pw">Password:</label>
+                    <input type="password" id="pw" name="pw">
+                </div>
+                <div class="pwConfirm">
+                    <label for="pwConfirm">Confirm password:</label>
+                    <input type="password" id="pwConfirm" name="pwConfirm">
+                </div>
+            </div>
+            <button type="submit"><a href="https://www.github.com/moonlogin" class="account">Create Account</a></button>
+        </form>
+        <h2 class="logAcc">Already have an account? <a href="https://www.github.com/moonlogin" class="login">Log in</a></h2>
+    </div>
 </body>
 </html>

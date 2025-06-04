@@ -1,3 +1,173 @@
-h1 {
-    color: red;
+@font-face {
+    font-family: 'chernobyl';
+    src: url('./Chernobyl.otf') format('opentype');
+}
+
+body {
+    display: flex;
+    margin: 0;
+}
+
+.backImg {
+    background-image: url(moon.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 35vw;
+    height: 100vh;
+}
+
+.odinLogo {
+    background-color: rgba(3, 3, 3, 0.5);
+    background-size: 5rem;
+    background-repeat: no-repeat;
+    align-items: center;
+    margin-top: 9rem;
+    display: flex;
+    width: 35vw;
+    height: 20vh;
+}
+
+.odinImg {
+    background-image: url(./odin.png);
+    background-size: 5rem;
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 10vw;
+    height: 20vh;
+    margin-left: 4rem;
+}
+
+.odinText {
+    color: white;
+    font-size: 4.5rem;
+    font-family: 'chernobyl', Arial, "Times New Roman";
+    font-style: italic;
+}
+
+.footer {
+    position: absolute;
+    color: white;
+    font-size: 0.7rem;
+    top: 95%;
+    left: 38%;
+}
+a {
+    color: white;
+}
+
+a.account {
+    text-decoration: none;
+}
+
+a.login {
+    color: green;
+    text-decoration: none;
+}
+
+/* Separated lines to ease CSS editing for now, will remove later */
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+
+.container {   
+    background-color: #E0F2FF;
+}
+
+.formIntro {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-top: 1rem;
+    margin: 0;
+    padding-top: 5rem;
+    padding-left: 2rem;
+    line-height: 0.5rem;
+    letter-spacing: 1px;
+}
+
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+
+/*Need to fix from this point tomorrow*/
+form {
+    background-color: white;
+    border: 5px solid transparent;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.2);
+    height: 50vh;
+    display: flex;
+    gap: 2px;
+    flex-wrap: wrap;
+}
+
+h1.formStart {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    padding-left: 1rem;
+    font-family: Arial, "Times New Roman", serif;
+}
+
+.formControls {
+    display: flex;
+    gap: 2px;
+}
+
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+}
+
+.firstName,
+.lastName,
+.phone,
+.email,
+.pw,
+.pwConfirm {
+    border: 10px solid green;
+    flex-direction: row;
+    align-items: flex-start; /* To avoid stretching */
+    margin-bottom: 20px;
+}
+
+.form-row input[type='text'] {
+    width: 250px;
+    height: initial;
+  }
+
+label {
+    text-align: right;
+    width: 120px;
+    margin-top: 7px;
+    padding-right: 20px;
+}
+
+.form-row input[type='text'] {
+    width: 250px;
+    height: initial;
+}
+
+button {
+    background-color: #203141;
+    color: white;
+}
+
+.logAcc {
+    font-size: 1rem;
 }
