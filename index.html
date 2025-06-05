@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up-Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,41 +16,72 @@
         <div class="footer">Photo by <a href="https://unsplash.com/@adinc">Altinay Dinç</a> on <a href="https://unsplash.com/">Unplash</a></div>
     </div>
     <div class="container">
-        <div class="formIntro">
+        <header class="form-header">
             <p><em>Thank you</em> for showing interest in your website!</p>
             <p>Please fill in the information below to get access to weekly news.</p>
-        </div>
-        <form action="https:/www.data-sendsite.com" method="get">
-            <h1 class="formStart">Let's get started!</h1>
-            <div class="formControls">
-                <div class="firstName">
-                    <label for="firstName">First name:</label>
-                    <input type="text" id="firstName" name="firstName">
+        </header>
+        <form action="https:/www.data-sendsite.com" method="post" id="signup-form">
+            <h1 class="form-start">Let's get started!</h1>
+            <div class="form-controls">
+                <div class="first-form-column">
+                    <div class="firstNameRow">
+                        <label for="firstName" id="firstName">FIRST NAME</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="lastNameRow">
+                        <label for="userMail">EMAIL</label>
+                        <input type="email" id="userMail" name="email" placeholder="gabrif29gi@gmail.com" required>
+                    </div>
                 </div>
-                <div class="lastName">
-                    <label for="lastName">Last name:</label>
-                    <input type="text" id="lastName" name="lastName">
+                <div class="second-form-column">
+                    <div class="firstNameRow">
+                        <label for="lastName">LAST NAME</label>
+                        <input type="text" id="lastName" name="lastName">
+                    </div>
+                    <div class="lastNameRow">
+                        <label for="pw">PASSWORD</label>
+                        <input class="user-password" type="password" id="pw" name="pw" placeholder="a2b99xj" pattern="(^.*\d.*\w.*$)" required>
+                    </div>
                 </div>
-                <div class="email">
-                    <label for="userMail">Email:</label>
-                    <input type="email" id="userMail" name="email" placeholder="gabriel213b@gmail.com">
-                </div>
-                <div class="phone">
-                    <label for="phoneNumber">Phone number:</label>
-                    <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="19351052">
-                </div>
-                <div class="pw">
-                    <label for="pw">Password:</label>
-                    <input type="password" id="pw" name="pw">
-                </div>
-                <div class="pwConfirm">
-                    <label for="pwConfirm">Confirm password:</label>
-                    <input type="password" id="pwConfirm" name="pwConfirm">
+                <div class="third-form-column">
+                    <div class="firstNameRow">
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="tel" id="phone" name="phone" required minlength="10" maxlength="15">
+                    </div>
+                    <div class="lastNameRow">
+                        <label for="pwConfirm">CONFIRM PASSWORD</label>
+                        <input class="user-password" type="password" id="pwConfirm" name="pwConfirm" placeholder="a2b99xj" pattern="(^.*\d.*\w.*$)" required>
+                    </div>
                 </div>
             </div>
-            <button type="submit"><a href="https://www.github.com/moonlogin" class="account">Create Account</a></button>
+            <div class="fourth-form-column">
+                <legend>Field of Interest</legend>
+                <fieldset class="form-choices">
+                    <div>
+                        <input type="radio" id="math" name="choice" value="math">
+                        <label for="math">Math 📚</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="pop" name="choice" value="math">
+                        <label for="pop">Pop Culture 🌟</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="philosophy" name="choice" value="philosophy">
+                        <label for="philosophy">Philosophy 🏛️</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="games" name="choice" value="games">
+                        <label for="games">Games 🎮</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="games" name="choice" value="games">
+                        <label for="games">Movies 🎞️</label>    
+                    </div>
+                </fieldset>
+                </div>
         </form>
-        <h2 class="logAcc">Already have an account? <a href="https://www.github.com/moonlogin" class="login">Log in</a></h2>
+    <button type="submit" class="account" form="signup-form">Create Account</button>
+    <p class="logAcc">Already have an account? <a href="https://www.github.com/moonlogin" class="login">Log in</a></p>
     </div>
 </body>
 </html>
